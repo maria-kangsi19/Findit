@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Location</title>
+    <link rel="stylesheet" href="{% static 'map.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+</head>
+<body>
+   <div class="header">
+        <h2>Your location</h2>
+       
+    </div>
+        
+
+
+    <main class="map-container">
+        <div class="map-wrapper">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.6509678123945!2d75.89020687529507!3d22.74013492875548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd1db9c7bff9%3A0x86dbb089e89ee9c3!2sAvantika%20University%20Gate!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                width="100%"
+                
+                
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </main>
+
+      <div class="footer">
+ 
+<a href="{% url 'index' %}">
+        <i  class="fa-regular fa-house"></i>
+    </a>
+ <a href="{% url 'map' %}">
+        <i class="fa-regular fa-map"></i>
+    </a>
+  <a href="{% url 'msg' %}">
+       <i class="fa-regular fa-message"></i>
+</a>
+ <a href="{% url 'user' %}">
+       <i class="fa-regular fa-user"></i>
+ </a>
+</div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
